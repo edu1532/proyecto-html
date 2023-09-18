@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icono-Dinosaurio.png" type="image/x-ico">
+    <title>Pàgina Web de Diego</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 25vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 80%;
+            height:80%;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Diego y sus Dinosaurios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencia.html">Preferencia</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    
+    <div class="centrado">
+    <video src="/assets/Video/Video de Dinosaurios.webm" autoplay muted controls width="500px"></video>
+    </div>
+
+
+    <div class="centrado"> 
+        <audio class="centrado" src="/assets/Audio/carnotauru 11.mp3" autoplay controls muted></audio>
+    </div>
+    
+    
+    
+
+    <section class="centrado">
+
+        <div class="gallery">
+            <a href="/assets/Imagenes/Jugando con Dino.jpg" target="_blank"><img src="/assets/Imagenes/Jugando con Dino.jpg" alt="Jugando con dinosaurios"></a>  
+            <div class="desc">Jugando con Dinosaurios</div>
+        </div>
+
+        <div class="gallery"><a href="/assets/Imagenes/Niño con Dinosaurio.jpg" target="_blank"><img src="/assets/Imagenes/Niño con Dinosaurio.jpg" alt="Dinosaurios"></a>
+            <div class="desc">Dinosaurios</div>
+        </div>
+
+        <div class="gallery" >
+            <a href="/assets/Imagenes/Dino.jpg" target="_blank"><img src="/assets/Imagenes/Dino.jpg" alt="Dino"></a>
+            <div class="desc">Dino</div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+</body>
+</html>
